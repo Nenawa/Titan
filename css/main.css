@@ -1,0 +1,226 @@
+/**************************
+PROJET : TITAN
+**************************/
+
+/**************************
+GLOBAL
+**************************/
+
+* {
+    box-sizing: border-box;
+    /**/
+}
+
+body {
+    background: #FFFFFF;
+    word-wrap: break-word;
+    /* Pour que le texte ne dépasse pas du bloc parent */
+}
+
+img, iframe, video {
+    max-width: 100%;
+    /* Pour que les éléments ne dépassent pas de leurs conteneurs */
+}
+
+img {
+    vertical-align: middle;
+    /* Pour enlever la marge basse par défaut */
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteneur {
+    width: 700px;
+    height: 753px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* p{
+     filter: drop-shadow(0px 2px 0px #257a9f); /*drop-shadow(décalage-x, décalage-y, rayon-flou, rayon-étalement, couleur)
+}*/
+
+/* 
+img{
+    display: flex;
+    align-content: center;
+    justify-content: center; /* pour centrer une image dans un cadre 
+}
+
+a:hover img{
+    
+   opacity: 0,5;  /* transparence avec le fond au survol 
+}
+*/
+
+/**************************
+STRUCTURE
+**************************/
+
+/**************************
+TYPO
+**************************/
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.woff2') format('woff2'), url('fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'), url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**************************
+MODULES
+**************************/
+
+/* logo */
+
+.logo {
+    width: 389px;
+    height: 178.25px;
+    margin: auto;
+}
+
+/* Chapeau de présentation */
+
+.chapo {
+    width: 700px;
+    height: 60px;
+    margin: auto;
+    margin-top: 41.75px;
+    margin-bottom: 60px;
+}
+
+.chapo h1 {
+    font-family: 'robotoregular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 25.78px;
+    text-align: center;
+    color: #000000;
+}
+
+/* formulaire */
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    font-family: 'robotobold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin: auto;
+}
+
+.obligatoire {
+    color: red;
+}
+
+.formulaire label {
+    width: 270px;
+    height: 30px;
+}
+
+.formulaire input {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    width: 270px;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+.newsletter {
+    font-family: 'robotoregular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: auto;
+    margin-bottom: 48px;
+}
+
+.newsletter input {
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+/* bouton */
+button {
+    font-family: 'robotoregular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 350px;
+    height: 40px;
+    background: #DB6708;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+button:hover{
+    background: #FFFFFF;
+    color: #DB6708;
+
+
+}
+button:active {
+    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, .6),
+                inset -2px -2px 4px  rgba(0, 0, 0, 0.25);
+
+}
+
+/* message */
+.msgOk{
+    font-family: 'robotoregular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin: auto;
+    margin-bottom: 48px;
+    text-align: center;
+    color: green;
+
+}
+.msgErreur{
+    font-family: 'robotoregular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin: auto;
+    margin-bottom: 48px;
+    text-align: center;
+    color: red;
+
+}
